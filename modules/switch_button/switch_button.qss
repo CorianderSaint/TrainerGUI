@@ -1,0 +1,45 @@
+QWidget{
+    background: transparent;
+}
+SwitchButton {
+    qproperty-spacing: 15;
+}
+SwitchButton > QLabel {
+    color: rgb(128, 128, 128);
+    font: 14px "Microsoft YaHei";
+    font-weight: 900;
+}
+Indicator {
+    height: 15px;
+    width: 44px;
+    qproperty-sliderOnColor: white;
+    qproperty-sliderOffColor: #3a4462;
+    qproperty-sliderDisabledColor: rgb(155, 154, 153);
+    border-radius: 13px;
+}
+Indicator:!checked {
+    background-color: #ffffff;
+    border: 4px solid #6272A4;
+}
+Indicator:!checked:hover {
+    border: 4px solid rgb(119, 136, 187);
+}
+Indicator:!checked:pressed {
+    border: 4px solid #495474;
+    background-color: #495474;
+}
+Indicator:checked {
+    border: 4px solid #BD93F9;
+    background-color: #BD93F9;
+}
+Indicator:checked:hover {
+    border: 4px solid #c8acf9;
+}
+Indicator:checked:pressed {
+    border: 4px solid #495474;
+    background-color: #495474;
+}
+Indicator:disabled{
+    border: 4px solid rgb(194, 194, 191);
+    background-color: rgb(194, 194, 191);
+}
